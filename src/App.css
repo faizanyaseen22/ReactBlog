@@ -1,0 +1,132 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.header > a {
+  display: none;
+}
+.main-body {
+  display: flex;
+
+  padding: 10px 20px;
+}
+.footer {
+  padding: 10px;
+  background-color: #eee;
+  -webkit-box-shadow: 0px -4px 3px rgba(248, 243, 250, 0);
+  -moz-box-shadow: 0px -4px 3px rgba(248, 243, 250, 0);
+  box-shadow: 0px -4px 3px rgba(248, 243, 250, 0);
+}
+.footer p {
+  text-align: center;
+}
+
+.left-side {
+  width: 70%;
+  margin-right: 20px;
+  height: 100%;
+}
+.right-side {
+  width: 30%;
+  padding: 20px;
+  height: 75vh;
+  /* border-left: 1px solid #eee; */
+}
+/* HOME */
+
+.home > p {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.blogs {
+  margin-top: 50px;
+  padding: 0px 30px;
+}
+
+.blogs .card {
+  margin: 20px 0px;
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card > h2 {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.card > h2:hover {
+  color: gray;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.user-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex > div {
+  margin-left: 10px;
+}
+.flex h3 {
+  font-size: 14px;
+  line-height: 10px;
+}
+.flex p {
+  font-size: 12px;
+  margin-top: -10px;
+}
+.summary {
+  margin-top: 20px;
+  padding: 0px 30px;
+}
+.summary > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.summary .blog-image {
+  max-width: 600px;
+  width: 100%;
+}
+
+.headlines {
+  overflow-y: auto;
+  height: 80vh;
+}
+
+@media screen and (max-width: 768px) {
+  .main-body {
+    flex-direction: column;
+  }
+  .left-side {
+    width: 100%;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .home-link {
+    display: none;
+  }
+  .header > a {
+    display: block;
+  }
+}
